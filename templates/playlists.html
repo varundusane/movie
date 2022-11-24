@@ -1,0 +1,15 @@
+{% extends "index.html" %}
+{% load crispy_forms_tags %}
+{% block start %}
+
+ <div class="content-section col-md-8 col-md-offset-2">
+  <center>
+      <h3>Add in
+      </h3>
+{% for p in play %}
+
+      {{p.playlist_name}}</a>
+      {% endfor %}
+</center>
+ </div>
+{% endblock start %}
